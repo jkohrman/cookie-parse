@@ -62,4 +62,8 @@ test('assign only once', function() {
         cookie.parse('foo=false;bar=bar;foo=true'));
     assert.deepEqual({ foo: '', bar: 'bar' },
         cookie.parse('foo=;bar=bar;foo=boo'));
+    assert.deepEqual({ foo: 'foo', FooBar: 'true' },
+        cookie.parse('foo=foo;FooBar;FooBar'));
+    assert.deepEqual({ foo: 'foo', FooBar: 'false' },
+        cookie.parse('foo=foo;FooBar=false;FooBar'));
 });
