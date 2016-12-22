@@ -60,13 +60,16 @@ function parse(str, options) {
     var pair = pairs[i];
     var eq_idx = pair.indexOf('=');
 
-    // skip things that don't look like key=value
+    // set true for things that don't look like key=value
+    var key;
+    var val;
     if (eq_idx < 0) {
-      continue;
-    }
-
-    var key = pair.substr(0, eq_idx).trim()
-    var val = pair.substr(++eq_idx, pair.length).trim();
+      key = pair.trim();
+      val = 'true';
+    } else {
+      key = pair.substr(0, eq_idx).trim()
+      val = pair.substr(++eq_idx, pair.length).trim();
+    };
 
     // quoted values
     if ('"' == val[0]) {
