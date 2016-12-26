@@ -1,3 +1,9 @@
+0.4.0 / 2016-12-26
+==================
+
+  * Add parser support for non key-value pair cookie flags
+    - `parse` now returns `HttpOnly: 'true'` instead of skipping
+
 0.3.1 / 2016-05-26
 ==================
 

@@ -1,4 +1,4 @@
-# cookie
+# cookie-parse
 
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
@@ -6,18 +6,20 @@
 [![Build Status][travis-image]][travis-url]
 [![Test Coverage][coveralls-image]][coveralls-url]
 
+_A fork of the `cookie` package._
+
 Basic HTTP cookie parser and serializer for HTTP servers.
 
 ## Installation
 
 ```sh
-$ npm install cookie
+$ npm install cookie-parse
 ```
 
 ## API
 
 ```js
-var cookie = require('cookie');
+var cookie = require('cookie-parse');
 ```
 
 ### cookie.parse(str, options)
@@ -208,13 +210,13 @@ $ npm test
 
 [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/cookie.svg
-[npm-url]: https://npmjs.org/package/cookie
-[node-version-image]: https://img.shields.io/node/v/cookie.svg
+[npm-image]: https://img.shields.io/npm/v/cookie-parse.svg
+[npm-url]: https://npmjs.org/package/cookie-parse
+[node-version-image]: https://img.shields.io/node/v/cookie-parse.svg
 [node-version-url]: https://nodejs.org/en/download
-[travis-image]: https://img.shields.io/travis/jshttp/cookie/master.svg
-[travis-url]: https://travis-ci.org/jshttp/cookie
-[coveralls-image]: https://img.shields.io/coveralls/jshttp/cookie/master.svg
-[coveralls-url]: https://coveralls.io/r/jshttp/cookie?branch=master
-[downloads-image]: https://img.shields.io/npm/dm/cookie.svg
-[downloads-url]: https://npmjs.org/package/cookie
+[travis-image]: https://img.shields.io/travis/jkohrman/cookie-parse/master.svg
+[travis-url]: https://travis-ci.org/jkohrman/cookie-parse
+[coveralls-image]: https://img.shields.io/coveralls/jkohrman/cookie-parse/master.svg
+[coveralls-url]: https://coveralls.io/r/jkohrman/cookie-parse?branch=master
+[downloads-image]: https://img.shields.io/npm/dm/cookie-parse.svg
+[downloads-url]: https://npmjs.org/package/cookie-parse
