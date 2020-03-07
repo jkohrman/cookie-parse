@@ -8,13 +8,21 @@
 
 'use strict';
 
+function declareMod(name,val){
+  const browser = "undefined" !== typeof exports;
+  if(browser){
+    browser[name] = val
+  } else {
+    exports = val;
+  }
+}
+
 /**
  * Module exports.
  * @public
  */
 
-exports.parse = parse;
-exports.serialize = serialize;
+declareMod("cookies", {parse,serialize})
 
 /**
  * Module variables.
